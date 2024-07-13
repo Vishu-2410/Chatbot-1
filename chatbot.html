@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .chatbot-container {
+        height: 80vh;
+        width: 500px;
+        margin: 0 auto;
+        background-color: #f5f5f5;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+        background-color: darkslategrey;
+        color: #ffffff;
+        padding: 20px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    #chatbot {
+        background-color: #f5f5f5;
+        border: 1px solid #eef1f5;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+    }
+  #chatbot-message {
+    /* display: flex;
+    align-items: flex-start;
+    position: relative; */
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 20px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+.chat-input {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eef1f5;
+  }
+  #user-input {
+    flex: 1;
+    height: 60px;
+    border: 1px solid #eef1f5;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    background: #ffffff;
+    color: #333333;
+    border: none;
+    margin-top: 60%;
+  }
+button{
+     border: none;
+    margin-top: 60%;
+
+}
+  .send-icon {
+    /* border: none;
+    margin-top: 60%; */
+    margin-right: 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  }
+li {
+    background-color:rgba(211, 211, 211, 0.903);
+    color: #333333;
+    font-size: 1.1em;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  message-container {
+    background:white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .userList{
+    color:white;
+    background-color: rgb(72, 83, 82);
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 8px 8px 0px 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 35px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+</style>
+
+<body>
+    <div class="chatbot-container">
+        <header>
+            <h2>chatbot</h2>
+        </header>
+        <div id="chatbot">
+            <ul id="chatbot-message">
+                <!-- <li class="chat incoming">
+                <p id="quest1"></p>
+            </li>
+            <li class="chat outgoing">
+                <p id="quest2"></p>
+            </li> -->
+            </ul>
+
+            <div class="chat-input">
+                <message-container>
+                <textarea placeholder="Enter a message here" id="user-input"></textarea>
+                <button type="submit" onclick="sendMessage()"><img class="send-icon" src="tlogo2.jpg" alt=""></button>
+            </message-container>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="chatbot.js">
+
+    </script>
+</body >
+
+</html >
