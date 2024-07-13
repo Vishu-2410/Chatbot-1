@@ -33,9 +33,9 @@
         border-radius: 4px;
     }
   #chatbot-message {
-    /* display: flex;
-    align-items: flex-start;
-    position: relative; */
+    overflow-y: scroll;
+    height: 65vh;
+    list-style-type: none;
     font-size: 16px;
     line-height: 40px;
     border-radius: 20px;
@@ -53,18 +53,19 @@
     flex: 1;
     height: 60px;
     border: 1px solid #eef1f5;
-    border-radius: 4px;
-    padding: 0 10px;
-    font-size: 14px;
+    border-radius: 15px;
+    margin: 10px;
+    font-size: 18px;
     transition: border-color 0.3s;
-    background: #ffffff;
+    background-color: rgba(72, 83, 82,0.3);
     color: #333333;
     border: none;
-    margin-top: 60%;
+    align-items: center;
+   
   }
 button{
      border: none;
-    margin-top: 60%;
+    /* margin-top: 60%; */
 
 }
   .send-icon {
@@ -96,7 +97,7 @@ li {
     padding: 10px;
     border-radius: 8px 8px 0px 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 35px;
+    margin-left: 55px;
     margin-bottom: 15px;
     margin-top: 15px;
   }
